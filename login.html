@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        /* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Login Form */
+.login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.login-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-submit:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="web.html">
+                <img src="IMAGE.png" alt="image" width="140" height="60">
+            </a>  
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="web.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="about Us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="login-button">
+                <a href="#" class="login-link">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class="login-container">
+        <form action="authenticate.php" method="POST" class="login-form">
+            <h1>Login</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                    <option value="admin">Admin</option>
+                    <option value="visitor">Visitor</option>
+                </select>
+            </div>
+            <button type="submit" class="login-submit">Login</button>
+        </form>
+    </main>
+</body>
+</html>

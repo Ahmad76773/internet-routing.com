@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="announcement-bar">
+       INTERNET ROUTING SYSTEM
+      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Routing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="web.html">
+            <img src="IMAGE.png" alt="image" width="140" height="60">
+        </a>
+        
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="web.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about Us.html">About Us</a></li>           
+            <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+      <div class="login-button">
+        <a href="login.html" class="login-link">Login</a>
+    </div>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    
+  </header>
+  
+  <section class="hero-slider">
+    
+    <div class="hero-slide" style="background-image: url('bg1.jpg');">
+        <div class="slide-content">
+            <h1>Wellcome to INTERNET ROUTING SYSTEM</h1>
+            <a href="service.html" class="hero-button">Explore Services</a>
+        </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('bg2.jpg');">
+        <div class="slide-content">
+            <h1>We Provide You Latest Designs of Computer Labs</h1>
+            <a href="about Us.html" class="hero-button">About Us</a>
+        </div>
+    </div>
+    <div class="hero-slide" style="background-image: url('bg3.jpg');">
+        <div class="slide-content">
+            <h1>We'd love to hear for you </h1>
+            <a href="contact.html" class="hero-button">Get in Touch</a>
+        </div>
+    </div>
+    
+</section>
+<div class="question-bar-container">
+    <input type="text" id="question" class="question-bar" placeholder="Ask about internet routing...">
+    <button class="ask-button" onclick="searchAnswer()">Ask</button>
+  </div>
+</section>
+
+
+
+  
+  
+    <!-- About Internet Section -->
+    <section id="about-section" class="about-us">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="net.jpg" alt="Internet - Global Connectivity">
+            </div>
+            <div class="about-content">
+                <h2>Understanding the Internet</h2>
+                <p>
+                    The internet is a global network connecting billions of devices worldwide, enabling seamless communication and information sharing.
+                </p>
+                <h3>What is the Internet?</h3>
+                <p>
+                    At its core, the internet is a network of interconnected devices, including computers, servers, and smart devices. It allows users to access resources, share data, and communicate across vast distances.
+                </p>
+                <h3>How Does the Internet Work?</h3>
+                <p>
+                    The internet operates on a system of protocols like TCP/IP, which standardize data transmission. Data is broken into packets and sent through various networks, guided by devices like routers and switches.
+                </p>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Scalability to connect billions of devices.</li>
+                    <li>Decentralized architecture for fault tolerance.</li>
+                    <li>Accessibility to a wide range of services like email, websites, and streaming platforms.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Internet Routing Section -->
+    <section id="routing-section" class="about-us">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="a.avif" alt="Internet Routing in Action">
+            </div>
+            <div class="about-content">
+                <h2> Internet Routing</h2>
+                <p>
+                    Internet routing is the backbone of digital communication, ensuring that data packets reach their intended destinations efficiently.
+                </p>
+                <h3>What is Routing?</h3>
+                <p>
+                    Routing is the process of determining the best path for data packets to travel across networks. This involves analyzing the destination IP address and choosing optimal routes.
+                </p>
+                <h3>The Role of Routers</h3>
+                <p>
+                    Routers are critical devices in networking. They:
+                    <ul>
+                        <li>Analyze and forward data packets to their destinations.</li>
+                        <li>Facilitate communication between multiple networks.</li>
+                        <li>Improve network efficiency and reliability.</li>
+                    </ul>
+                </p>
+                <h3>Advanced Routing Protocols</h3>
+                <p>
+                    Routing relies on protocols to share path information. Key protocols include:
+                    <ul>
+                        <li><strong>BGP (Border Gateway Protocol):</strong> Manages routing between autonomous systems on the internet, crucial for ISPs.</li>
+                        <li><strong>OSPF (Open Shortest Path First):</strong> Finds the shortest path within a single network using link-state information.</li>
+                        <li><strong>EIGRP (Enhanced Interior Gateway Routing Protocol):</strong> Balances efficiency and reliability within enterprise networks.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="qa-container">
+            <!-- Question 1 -->
+            <div class="question" onclick="toggleAnswer('answer1', this)">
+                <span>What is Internet Routing?</span>
+                <span class="icon">&#9654;</span>
+            </div>
+            <div class="answer" id="answer1">
+                Internet routing involves directing data packets across networks to their intended destinations. It is essential for ensuring connectivity and data transfer efficiency.
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question" onclick="toggleAnswer('answer2', this)">
+                <span>How does a Router Work?</span>
+                <span class="icon">&#9654;</span>
+            </div>
+            <div class="answer" id="answer2">
+                A router analyzes the destination IP address in a data packet and determines the most efficient path to forward it, ensuring successful delivery.
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question" onclick="toggleAnswer('answer3', this)">
+                <span>What is BGP in Internet Routing?</span>
+                <span class="icon">&#9654;</span>
+            </div>
+            <div class="answer" id="answer3">
+                The Border Gateway Protocol (BGP) is used to exchange routing information between different networks, enabling ISPs and organizations to manage data traffic effectively.
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question" onclick="toggleAnswer('answer4', this)">
+                <span>What are Routing Tables?</span>
+                <span class="icon">&#9654;</span>
+            </div>
+            <div class="answer" id="answer4">
+                Routing tables store information about network paths. Routers use these tables to decide where to forward data packets.
+            </div>
+        </div>
+    </section>
+
+    <script src="web.js"></script>
+</body>
+</html>
